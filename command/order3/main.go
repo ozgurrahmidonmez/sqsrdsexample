@@ -50,7 +50,6 @@ type Env struct {
 
 func (env *Env) poll() {
 	f := func(o model.Data) {
-		fmt.Println("consuming")
 		consume(o.(Order), env)
 	}
 	p := pool.New(100, f, 100000)
@@ -114,8 +113,8 @@ func main() {
 
 	s := sqs.New(sess)
 
-	//p, err := pgxpool.Connect(context.Background(), "postgresql://postgres:ozgotozgot1@database-1.cptj1r7jikob.eu-west-1.rds.amazonaws.com:5432")
-	p, err := pgxpool.Connect(context.Background(), "postgresql://postgres:postgres@localhost:5432")
+	p, err := pgxpool.Connect(context.Background(), "postgresql://postgres:ozgotozgot1@database-1.cptj1r7jikob.eu-west-1.rds.amazonaws.com:5432")
+	//p, err := pgxpool.Connect(context.Background(), "postgresql://postgres:postgres@localhost:5432")
 	if err != nil {
 		if _, err := fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err); err != nil {
 			return
@@ -136,7 +135,7 @@ func main() {
 	}()
 	router.POST("/order", env.Add)
 	router.POST("/poll/stop", env.StopPoll)
-	e := router.Run("localhost:8080")
+	e := router.Run(":8991")
 	if e != nil {
 		os.Exit(1)
 	}

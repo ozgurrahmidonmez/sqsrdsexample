@@ -116,8 +116,10 @@ github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 h1:ZqeYNhU3OH
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 h1:Esafd1046DLDQ0W1YjYsBW+p8U2u7vzgW2SQVmlNazg=
 github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
-github.com/ozgurrahmidonmez/taskpool v0.0.0-20211003082459-75bca64b1351 h1:fZ/t1VeYI/BrhA/lT/YA2Ylzqp/8ki4DO0AFzjw++N0=
-github.com/ozgurrahmidonmez/taskpool v0.0.0-20211003082459-75bca64b1351/go.mod h1:JDXURLk9HhYLoZv8fFXDzsadFl+YZZ2MhOxfb5eaUYU=
+github.com/ozgurrahmidonmez/taskpool v1.0.0 h1:uuXddZpRuHlX56lzdx62ap8q1Xe9auCGg/qPzTRRn9o=
+github.com/ozgurrahmidonmez/taskpool v1.0.0/go.mod h1:JDXURLk9HhYLoZv8fFXDzsadFl+YZZ2MhOxfb5eaUYU=
+github.com/ozgurrahmidonmez/taskpool v1.0.1 h1:6AdwxcwlCkM1B6sjOZbYjtki30JPuwLkZsEP9ji6kgs=
+github.com/ozgurrahmidonmez/taskpool v1.0.1/go.mod h1:JDXURLk9HhYLoZv8fFXDzsadFl+YZZ2MhOxfb5eaUYU=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

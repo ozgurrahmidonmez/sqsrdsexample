@@ -10,7 +10,7 @@ require (
 	github.com/jackc/pgconn v1.10.0
 	github.com/jackc/pgx/v4 v4.13.0
 	github.com/jackc/puddle v1.1.4
-	github.com/ozgurrahmidonmez/taskpool v0.0.0-20211003082459-75bca64b1351
+	github.com/ozgurrahmidonmez/taskpool v1.0.1
 )
 
 require (
