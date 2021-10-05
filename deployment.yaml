@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqsrdsexample-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sqsrdsexample
+  template:
+    metadata:
+      labels:
+        app: sqsrdsexample
+    spec:
+      volumes:
+        - name: vol
+          hostPath:
+            path: /Users/ext02d15440/.aws
+      containers:
+      - name: sqsrdsexample
+        image: ozgurdonmez/sqsrdsexample:latest
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        volumeMounts:
+          - name: vol
+            mountPath: /root/.aws     
+        ports:
+        - containerPort: 8991
+        imagePullPolicy: Always
